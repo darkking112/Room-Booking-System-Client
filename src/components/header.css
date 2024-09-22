@@ -1,0 +1,37 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 70px;
+    background-color: #D6DBD2;
+    align-items: center;
+    margin: 0px;
+}
+
+.header .logo {
+    background-color: #D6DBD2;
+}
+
+.header .logo img{
+    background-color: #D6DBD2;
+    height: 60px;
+}
+
+.header .header-btn {
+    background-color: #D6DBD2;
+}
+
+.header .header-btn p{
+    padding: 8px 20px;
+    border: solid #737373 2px;
+    border-radius: 20px;
+    color: #96031A;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
+}
+
+.header .header-btn p:hover{
+    border: solid #96031A 2px;
+    background-color: #96031A;
+    color: #F2F5EA;
+}

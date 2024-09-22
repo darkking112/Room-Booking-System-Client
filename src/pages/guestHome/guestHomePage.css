@@ -1,0 +1,213 @@
+/* Guest Home Page Styles */
+.guest-home-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 89vh;
+  background-color: #f2f5ea; /* Light background */
+}
+
+.room-booking, .booked-room {
+  background-color: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
+  margin: 20px;
+}
+
+/* Room Booking Styles */
+.room-booking-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.room-booking-container h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.room-booking-container p {
+  color: #737373;
+  cursor: pointer;
+  margin: 10px 0;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.room-booking-container p:hover {
+  color: #96031a;
+}
+
+.room-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.room-boxes p {
+  border: 1px dashed #ccc;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.room-boxes .selected {
+    border: 2px solid #878787;
+    font-weight: bold;
+    background-color: #ffc10791;
+}
+
+.room-boxes .reserved {
+    background-color: #D7ADAD;
+    cursor: not-allowed; /* Display not-allowed cursor */
+    pointer-events: none; /* Prevent any click events */
+}
+
+/* 
+.room-boxes p:hover {
+  background-color: #96031a;
+  color: white;
+} */
+
+.message-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.message {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.message h4 {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.inputs {
+  margin-bottom: 20px;
+}
+
+.inputs input {
+  width: 90%;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+/* Focus effect for input fields */
+.inputs input:focus {
+  border-color: #96031A; /* Match the focus color with the theme */
+  outline: none;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.buttons p {
+  background-color: #96031a;
+  color: white;
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.buttons p:hover {
+  background-color: #c7c7c7;
+}
+
+.buttons p:active {
+  transform: scale(0.98);
+}
+
+/* Booked Rooms Table Styles */
+.booked-rooms-table {
+  margin: 20px;
+}
+
+.booked-rooms-table table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.booked-rooms-table table th, 
+.booked-rooms-table table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+.booked-rooms-table table th {
+  background-color: #f2f5ea;
+  font-size: 18px;
+}
+
+.booked-rooms-table table td p {
+  color: #737373;
+  cursor: pointer;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.booked-rooms-table table td p:hover {
+  color: #96031a;
+  text-decoration: underline;
+}
+
+.booked-rooms-table button {
+  padding: 10px 20px;
+  background-color: #737373;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.booked-rooms-table button:hover {
+  background-color: #96031a;
+}
+
+/* Mobile Responsive Styles */
+@media screen and (max-width: 768px) {
+  .room-booking, .booked-room, .booked-rooms-table {
+    max-width: 90%;
+    padding: 20px;
+  }
+
+  .room-boxes {
+    flex-direction: column;
+  }
+}
