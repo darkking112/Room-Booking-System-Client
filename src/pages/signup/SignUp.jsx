@@ -77,8 +77,9 @@ function SignUp() {
             />
             <input
               type="text"
-              placeholder="Gender"
+              placeholder="Gender (M = Male / F = Female)"
               value={gender}
+              maxLength={1}
               onChange={(e) => setGender(e.target.value)}
               required
             />

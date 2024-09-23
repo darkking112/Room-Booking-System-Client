@@ -133,7 +133,7 @@
     width: 100%;
 }
 
-.buttons p {
+.message .buttons p {
   background-color: #96031a;
   color: white;
   padding: 10px 20px;

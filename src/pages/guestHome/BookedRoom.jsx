@@ -95,7 +95,7 @@ function BookedRoom({ bookings, userInfo }) {
           {showMessage && (
             <div className="message-overlay">
               <div className="message">
-                <p>{`Are you sure you want to cancel the booking for room number ${roomNo} ?`}</p>
+                <h4>{`Are you sure you want to cancel the booking for room number ${roomNo} ?`}</h4>
                 <div className="buttons">
                   <p onClick={() => handleConfirmClick()}>Confirm</p>
                   <p onClick={() => handleCancelClick()}>Cancel</p>
