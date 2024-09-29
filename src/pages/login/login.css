@@ -26,7 +26,7 @@
 }
 
 .login-form input[type="email"],
-.login-form input[type="text"] {
+.login-form input[type="password"] {
   width: 90%;
   padding: 12px;
   margin: 8px 0;
@@ -37,7 +37,7 @@
 }
 
 .login-form input[type="email"]:focus,
-.login-form input[type="text"]:focus {
+.login-form input[type="password"]:focus {
   border-color: #96031A; /* Match border focus color to header button */
 }
 

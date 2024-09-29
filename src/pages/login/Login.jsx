@@ -38,7 +38,9 @@ function Login() {
           setErrorMessage(""); // Clear error message
           console.log(data.user_info);
 
-          navigate(`${getUserType(data.user_info)}`, { state: data.user_info });
+          navigate(`/${getUserType(data.user_info)}`, {
+            state: data.user_info,
+          });
         } else {
           setErrorMessage(data.message); // Set error message
         }
@@ -54,7 +56,7 @@ function Login() {
       <Header buuttnText={"Sign Up"} />
       <div className="login-body">
         <div className="login-form">
-          <h2>Welcom to CODEHOUSE</h2>
+          <h2>Welcome to CODE HOUSE</h2>
           {errorMessage && (
             <p style={{ color: "red", fontWeight: "bold" }}>{errorMessage}</p>
           )}
@@ -70,7 +72,7 @@ function Login() {
             />
             <input
               className="password-field"
-              type="text"
+              type="password"
               placeholder="Password"
               onChange={(e) => setPassword(e.target.value)}
               value={password}

@@ -1,0 +1,160 @@
+.contact-us-page {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+.contact-us-body {
+    max-width: 1200px;
+    margin: 40px auto;
+    background-color: white;
+    padding: 50px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    height: 61vh;
+}
+
+h1 {
+    font-size: 42px;
+    color: #96031a;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.intro {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 40px;
+    text-align: center;
+    color: #555;
+}
+
+.contact-channels {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two equal columns */
+  gap: 20px; /* Space between columns */
+  align-items: center;
+  justify-items: center;
+}
+
+.contact-channels div {
+  background-color: #f9f9f9; /* Light background */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
+  padding: 20px;
+  width: 90%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-channels div svg {
+  margin-bottom: 10px; /* Icon spacing */
+  font-size: 2rem; /* Bigger icons */
+  color: #96031a; /* Theme dark red color */
+}
+
+.contact-channels h3 {
+  margin-top: 10px;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.contact-channels p {
+  color: #555;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+  .contact-channels {
+    grid-template-columns: 1fr; /* Single column layout on smaller screens */
+  }
+}
+
+
+
+.channel {
+    background-color: #f7f7f7;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.channel:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.icon {
+    font-size: 40px;
+    color: #96031a;
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-size: 26px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 18px;
+    color: #666;
+}
+
+.social-media {
+    grid-column: span 2;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.social-link {
+    font-size: 30px;
+    color: #333;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.social-link:hover {
+    color: #96031a;
+}
+
+/* Footer Styling */
+.footer {
+    background-color: #96031a;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.footer h3 {
+    font-size: 18px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-channels {
+        grid-template-columns: 1fr;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    p, .social-link {
+        font-size: 16px;
+    }
+}

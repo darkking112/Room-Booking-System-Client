@@ -6,7 +6,7 @@ import "./signup.css";
 function SignUp() {
   const navigate = useNavigate();
 
-  const [name, setName] = useState("");
+  const [name, setName] = useState(""); //States
   const [age, setAge] = useState("");
   const [phoneNo, setPhoneNo] = useState("");
   const [gender, setGender] = useState("");
@@ -28,7 +28,7 @@ function SignUp() {
         name: name,
         age: age,
         phoneNo: phoneNo,
-        gender: gender,
+        gender: gender.toUpperCase(),
         email: email,
         password: password,
       }),
@@ -91,8 +91,9 @@ function SignUp() {
               required
             />
             <input
-              type="text"
+              type="password"
               placeholder="Password"
+              minLength={8}
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               required

@@ -71,7 +71,7 @@ function RoomBooking({ userInfo, isFirstBooking, onCofirm }) {
           userID: userInfo.User_ID,
           name: userType === "guest" ? userInfo.Name : name,
           phoneNo: userType === "guest" ? userInfo.Phone_Number : phoneNo,
-          bookingType: userType === "guest" ? "Self Booked" : "Counter Booked",
+          bookingType: userType === "guest" ? "Self-Booked" : "Counter-Booked",
         }),
       })
         .then((response) => response.json())

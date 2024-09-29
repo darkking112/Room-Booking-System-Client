@@ -11,6 +11,23 @@
     background-color: #D6DBD2;
 }
 
+.nav-list {
+    margin: 0px 20px;
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-list p {
+    padding: 0px 30px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.nav-list p:hover {
+    color: #96031a;
+}
+
 .header .logo img{
     background-color: #D6DBD2;
     height: 60px;

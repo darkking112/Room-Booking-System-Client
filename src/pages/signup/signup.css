@@ -27,7 +27,8 @@
 
 .sign-up-form input[type="text"],
 .sign-up-form input[type="number"],
-.sign-up-form input[type="email"] {
+.sign-up-form input[type="email"],
+.sign-up-form input[type="password"] {
   width: 90%;
   padding: 12px;
   margin: 8px 0;
@@ -39,7 +40,8 @@
 
 .sign-up-form input[type="text"]:focus,
 .sign-up-form input[type="number"]:focus,
-.sign-up-form input[type="email"]:focus {
+.sign-up-form input[type="email"]:focus,
+.sign-up-form input[type="password"]:focus {
   border-color: #96031A; /* Match border focus color to header button */
 }
 

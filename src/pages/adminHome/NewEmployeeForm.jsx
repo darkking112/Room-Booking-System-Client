@@ -79,8 +79,9 @@ function NewEmployeeForm({ onCancel, onEmployeeAdded }) {
             required
           />
           <input
-            type="text"
+            type="password"
             placeholder="Password"
+            minLength={8}
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             required
