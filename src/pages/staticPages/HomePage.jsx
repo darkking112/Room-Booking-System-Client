@@ -8,7 +8,7 @@ import wifiIcon from "./assets/wifi.png";
 import communityIcon from "./assets/communities.png";
 import alassafImage from "./assets/alssaf-image.jpg";
 import mamoonImage from "./assets/mamoon-iamge.jpg";
-import abdalrahman from "./assets/abdalrahman-image.jpg";
+import abdalrahman from "./assets/mamoon-iamge.jpg";
 
 function HomePage() {
   return (
